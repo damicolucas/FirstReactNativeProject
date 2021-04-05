@@ -18,13 +18,13 @@ export default () => {
             <TextInput style={styles.TextInput} placeholder="Senha"></TextInput>
             <Button 
                 color="#afdec2"
-                title="Go to Details"
+                title="Login"
                 shadowColor="#000"
                 shadowOffset= "20"
                 shadowOpacity= "0.37"
                 shadowRadius= "7.49"
                 elevation= "12"  
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('MainTabs')}
             ></Button>
         </Container>
         
