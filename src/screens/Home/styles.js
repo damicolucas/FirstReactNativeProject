@@ -23,12 +23,6 @@ export const HeaderTitle = styled.Text`
     color: #FFFFFF; 
 `;
 
-export const SearchButton = styled.TouchableOpacity`
-    width: 26px;
-    height: 26px;
-
-`;
-
 export const ListArea = styled.View`
     margin-top: 30px;
     margin-bottom: 30px;

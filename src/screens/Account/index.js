@@ -6,7 +6,7 @@ import {    Container,
             ListArea
         } from './styles';
 
-import Item from '../../components/Item';
+import Item from '../../components/User';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -15,24 +15,24 @@ export default () => {
 
     const [list, setList] = useState([]);
 
-    const loadItems = async () => {
+    const loadUser = async () => {
         setList([]);
-        let items_string = '[{"tittle":"Your Profile","description":"Your settings"},{"tittle":"Your Password","description":"Configuration ","date":"PIN config"}]';
-        let items = JSON.parse(items_string);
-        if(items){
-            setList(items);
+        let user_string = '[{"tittle":"Your Profile","description":"Your settings"},{"tittle":"Your Password","description":"Configuration ","date":"PIN config"}]';
+        let user = JSON.parse(user_string);
+        if(user){
+            setList(user);
         }
         setLoading(false);
     }
 
     useEffect(() => {
-        loadItems();
+        loadUser();
     }, []);
     return (
         <Container>
             <Scroller>
                 <HeaderArea>
-                    <HeaderTitle numberOfLines={1}>Confi</HeaderTitle>
+                    <HeaderTitle numberOfLines={1}>Configuration</HeaderTitle>
                     
                 </HeaderArea>
                 <ListArea>
